@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "name": "Капри",
+  "browser": "",
+  "home_url": "https://www.google.com",
+  "commands": {
+    "music": {
+      "phrase": "включи музыку",
+      "action": "open_url",
+      "target": "https://open.spotify.com/collection/tracks",
+      "reply": "Готово",
+      "voice": "music"
+    },
+    "pause": {
+      "phrase": "пауза",
+      "action": "media_play_pause",
+      "target": "",
+      "reply": "Готово",
+      "voice": "pause"
+    },
+    "next": {
+      "phrase": "следующий трек",
+      "action": "media_next",
+      "target": "",
+      "reply": "Готово",
+      "voice": "next"
+    },
+    "volume_up": {
+      "phrase": "громче",
+      "action": "volume_up",
+      "target": "",
+      "reply": "Делаю звук повыше",
+      "voice": "volume_up"
+    },
+    "volume_down": {
+      "phrase": "тише",
+      "action": "volume_down",
+      "target": "",
+      "reply": "Делаю звук потише",
+      "voice": "volume_down"
+    },
+    "mute": {
+      "phrase": "без звука",
+      "action": "volume_mute",
+      "target": "",
+      "reply": "Готово",
+      "voice": "mute"
+    },
+    "browser": {
+      "phrase": "открой браузер",
+      "action": "open_home",
+      "target": "",
+      "reply": "Открываю браузер",
+      "voice": "browser"
+    },
+    "lock": {
+      "phrase": "заблокируй компьютер",
+      "action": "lock_screen",
+      "target": "",
+      "reply": "Готово",
+      "voice": "lock"
+    }
+  },
+  "replies": {
+    "ok": "Готово",
+    "start": "Привет, я Капри, твой голосовой помощник. Что будем делать?",
+    "wake": "Готова тебя слушать",
+    "unknown": "Я тебя не поняла, повтори",
+    "no_target": "Цель не задана",
+    "error": "Не получилось"
+  },
+  "audio": {
+    "min_rms": 0.005,
+    "confidence": 0.62,
+    "awake_seconds": 7.0
+  },
+  "hud": {
+    "enabled": true,
+    "corner": "bottom_right",
+    "click_through": false,
+    "image": "capri.gif"
+  },
+  "learning": {
+    "save_inbox": true,
+    "inbox_max": 200,
+    "auto_accept": 0.0
+  }
+}
